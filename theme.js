@@ -24,21 +24,15 @@ const animation = `body {
   100%   {background-color: #95234a;} 
 }`
 let prompt1 = prompt("Would you like to enter a theme code? (Y/N)");
-if (!prompt1 = "N") {
+if (prompt1 != null) {
   let prompt2 = prompt("Enter the code here:");
   const output = prompt2.split("˃");
- let val = "";
- for (const x in preset) {
- val += "--" + x + ":" + output[0] + "; ";
-}
-  let theme = val;
+  let theme = output[0];
   let animation = output[1];
-  
 }
-
-preset = JSON.parse(theme);
 
 var e = document.getElementsByTagName('html')[0];
+const preset = JSON.parse(theme);
 let text = "";
 for (const x in preset) {
   text += "--" + x + ":" + preset[x] + "; ";
