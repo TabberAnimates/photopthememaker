@@ -27,8 +27,13 @@ let prompt1 = prompt("Would you like to enter a theme code? (Y/N)");
 if (!prompt1 = "N") {
   let prompt2 = prompt("Enter the code here:");
   const output = prompt2.split("˃");
-  let theme = output[0];
+ let val = "";
+ for (const x in preset) {
+ val += "--" + x + ":" + output[0] + "; ";
+}
+  let theme = val;
   let animation = output[1];
+  
 }
 
 preset = JSON.parse(theme);
