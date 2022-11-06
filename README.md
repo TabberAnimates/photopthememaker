@@ -29,3 +29,4 @@ The hex codes text feild is where colors that are globally used across all versi
 <br> To make the code generate properly, you need a hex code, and then a comma for each of the 7 hex codes. If you set these hex codes to the right values, the website can look great! Now moving on to css animation.
 ## CSS Animation
 The CSS animation section is pretty self explanitory, you can use custom css (which includes css animation) in your theme. Theres no special structure like with the hex codes, so it would be an easier task to do than hex codes. Though if you don't know css, then it might be a paint to figure it out. But it will be worth it. Trust me.
+
