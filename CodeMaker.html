@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photop Theme Maker Code Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:description" content="A code generator for the Photop theme importer, made by Siri.">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+            }
+            
+            h1 {
+              font-size: 50px
+            }
+            
+            button {
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+            
+            .button1 {
+                background-color: white; 
+                color: black; 
+                border: 2px solid #4CAF50;
+            }
+
+            .button1:hover {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1>Theme Code Generator</h1>
+        <h2>A code generator for the Photop theme importer, made by Siri.</h2>
+        <label for="hex-data">Hex Codes</label><br><br>
+        <textarea id="hex-data" name="hex-data" rows="15" cols="40">#300d20,#17060f80,#290b1b,#2e0c1e,#380f25,#42122c,#ffffff,#FF42A7</textarea><br><br>
+        <label for="animation-data">CSS Animation</label><br><br>
+        <textarea id="animation-data" name="animation-data" rows="15" cols="40">body { 
+  background-color: #95234a; 
+  animation-name: example; 
+  animation-duration: 4s; 
+  animation-iteration-count: 1.7976931348623157e+309; 
+}
+@keyframes example { 
+  0%   {background-color: #95234a;} 
+  25%  {background-color: #4b87bc;} 
+  50%  {background-color: #1e183b;} 
+  75% {background-color: #3f7ca9;} 
+  100%   {background-color: #95234a;} 
+}</textarea><br><br>
+<button class="button1" onclick="codeGen()">Generate Code</button>
+<p id="demo"></p>
+<script>
+function codeGen() {
+let section1 = "[" + document.getElementById('hex-data').value + "]";
+let section2 = section1 + "˃" + document.getElementById('animation-data').value;
+document.getElementById("demo").innerHTML = section2;
+}
+</script>
+        </center>
+    </body>
+</html>
