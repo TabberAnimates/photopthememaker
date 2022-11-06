@@ -14,7 +14,7 @@ And **BOOM!** You now have the theme importer :D
 
 ## Making a theme
 Now that you have the importer, now lets get the theme code.
-<br>First off, you need to go to this website: https://tabberanimates.github.io/photopthememaker/codegen.html. The page should look something like this:
+<br>First off, you need to go to this website: https://tabberanimates.github.io/photopthememaker/. The page should look something like this:
 <br> ![alt text](https://tabberanimates.github.io/photopthememaker/images/codegen.png)
 <br>Now lets break down how to generate a code with this website.
 ## Hex Codes
