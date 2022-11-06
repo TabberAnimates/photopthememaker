@@ -19,7 +19,8 @@ Now that you have the importer, now lets get the theme code.
 <br>Now lets break down how to generate a code with this website.
 ## Hex Codes
 The hex codes text feild is where colors that are globally used across all versions of photop. Each one of those hex codes means something to the website. It is important to set these values, otherwise it would look messed up. Heres what each hex code means in order:
-<br> **Background Color
+<br> **Scrollbar Color
+<br> Background Color
 <br> Miscellaneous #1
 <br> Miscellaneous #2
 <br> Miscellaneous #3
