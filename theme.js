@@ -24,7 +24,7 @@ const animation = `body {
   100%   {background-color: #95234a;} 
 }`
 let prompt1 = prompt("Would you like to enter a theme code? (Y/N)");
-if (prompt1 != null) {
+if (prompt1.toLowerCase().includes("y")) {
   let prompt2 = prompt("Enter the code here:");
   const output = prompt2.split("˃");
   let theme = output[0];
