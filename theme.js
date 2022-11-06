@@ -1,5 +1,6 @@
 //Color data
 const theme = `{
+  "leftSideBar": "#300d20"
   "pageColor": "#17060f80", 
   "contentColor": "#290b1b", 
   "contentColor2": "#2e0c1e", 
