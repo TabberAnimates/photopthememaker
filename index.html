@@ -65,7 +65,7 @@
 <p id="demo"></p>
 <script>
 function codeGen() {
-let section1 = "[" + document.getElementById('hex-data').value + "]";
+let section1 = document.getElementById('hex-data').value;
 let section2 = section1 + "˃" + document.getElementById('animation-data').value;
 document.getElementById("demo").innerHTML = section2;
 }
