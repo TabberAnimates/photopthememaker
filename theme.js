@@ -31,7 +31,7 @@ document.body.appendChild(para); // Append to body
 }
 
 // Better CSS for photop
-let betterstyle = add("style", `.pageHolder { background-color: var(--pageColor); border-radius: 12px; } .stickyContainer { position: sticky; top: 8px; z-index: 500; border-radius: 12px; box-shadow: 0px 0px 0px var(--pageColor), 0px 0px 0px var(--pageColor); } .sidebar { border-radius: 12px; position: sticky; display: flex; flex-direction: column; box-sizing: border-box; width: 200px; height: calc(100vh - 16px); top: 8px; background: var(--pageColor); color: var(--themeColor); font-size: 20px; line-height: 20px; font-family: var(--secondFont); font-weight: bold; } .groupMembers { position: fixed; display: flex; flex-direction: column; min-width: 198px; height: 100vh; overflow-y: auto; background: var(--pageColor); }`)
+let betterstyle = add("style", `.pageHolder { background-color: var(--pageColor); border-radius: 12px; } .stickyContainer { position: sticky; top: 8px; z-index: 500; border-radius: 12px; box-shadow: 0px 0px 0px var(--pageColor), 0px 0px 0px var(--pageColor); } .sidebar { border-radius: 12px; position: sticky; display: flex; flex-direction: column; box-sizing: border-box; width: 200px; height: calc(100vh - 16px); top: 8px; background: var(--pageColor); color: var(--themeColor); font-size: 20px; line-height: 20px; font-family: var(--secondFont); font-weight: bold; } .groupMembers { position: fixed; display: flex; flex-direction: column; min-width: 198px; height: 100vh; overflow-y: auto; background: var(--pageColor); }`);
 
 function loadCode(str) {
   const output = str.split("˃"); // Splits the code into 2 sections
