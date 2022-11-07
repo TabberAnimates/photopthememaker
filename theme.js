@@ -1,14 +1,6 @@
+const names = `leftSidebarColor,pageColor,contentColor,contentColor2,contentColor3,borderColor,fontColor,themeColor`
 //Color data
-const theme = `{
-  "leftSideBar": "#300d20"
-  "pageColor": "#17060f80", 
-  "contentColor": "#290b1b", 
-  "contentColor2": "#2e0c1e", 
-  "contentColor3": "#380f25", 
-  "borderColor": "#42122c", 
-  "fontColor": "#ffffff", 
-  "themeColor": "#FF42A7"
-}`
+const theme = `#300d20,#17060f80,#290b1b,#2e0c1e,#380f25,#42122c,#ffffff,#FF42A7`
 //CSS animation data
 const animation = `body { 
   background-color: #95234a; 
@@ -47,10 +39,11 @@ if (prompt1.toLowerCase().includes("y")) {
 // Turns the data into css variables, which are used all around photop. Then it replaces the css variables in he <html> tag of the page to the automatically generated
 // ones.
 var e = document.getElementsByTagName('html')[0];
-const preset = JSON.parse(theme);
+const hex = theme.split(",");
+const nonhex = names.split(",");
 let text = "";
-for (const x in preset) {
-  text += "--" + x + ":" + preset[x] + "; ";
+for (const x in hex) {
+  text += "--" + nonhex[x] + ":" + hex[x] + "; ";
 }
 e.style = text;
 
